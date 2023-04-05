@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otpless</title>
+</head>
+<body>
+    <div id="ötpless"></div>
+    
+    <div class="center">
+        <h1>login</h1>
+        <form method="post">
+            <div class="txt_field">
+                <input type="text" required>
+                <label>username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                <label>password</label>
+            </div>
+        </form>
+        
+    </div>
+    <script type="text/javascript" src="https://otpless.com/auth.js"></script>
+    <!---get user's watsapp number and name--->
+<script type="text/javascript">
+    function otpless(otplessuser) {
+        var waName=otplessUser.waName;
+        var waNumber=otplessUser.waNumber;
+        document.getElementById('otpless').innerHTML = `
+        <H2>HI ${waName} WELCOME...!</H2>
+        <H2>${WAnUMBER}</H2>`;
+
+    }
+</script>
+
+</body>
+</html>
